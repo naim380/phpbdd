@@ -1,0 +1,3 @@
+SELECT * 
+FROM orders 
+WHERE date > DATE_SUB(CURRENT_DATE,INTERVAL 10 DAY) AND date <= NOW();
